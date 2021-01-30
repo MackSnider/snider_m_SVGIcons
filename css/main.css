@@ -49,10 +49,20 @@ img:hover
 {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
+	margin-top: 100px;
 }
 
 .iconHolder2
 {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.description p
+{
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
 }
