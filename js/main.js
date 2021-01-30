@@ -1,20 +1,16 @@
-(() => {
+ (() => {
 	// stub
-	console.log('Fired!')
+	console.log('Fired!');
 
-	let theIcon = document.querySelector('.wrapper img');
+	let theIcon = document.querySelector('.wrapper img'),
 		theIcons = document.querySelectorAll('.wrapper img')
 
-	let theIcons = document.querySelectorAll('.wrapper')
+	function logMe() {
+		console.log('clicked on an image!');
+		console.log(this.id);
+	}
 
-	function logMe()
-		console.log('clicked the button!')
+	theIcon.addEventListener('click', logMe);
 
-
-def logClick:
-	print('clicked the button');
-}
-
-theButton.addEventListener('click', logMe);
-theIcon.forEach(icon => icon.addEventListener('click', logMe))
+	theIcons.forEach(icon => icon.addEventListener("click", logMe))
 })();
